@@ -3,6 +3,7 @@ from src.02_embedding import EmbeddingPipeline
 from src.03_vectorstore import FaissVectorStore
 from src.04_search import RAGSearch
 
+# center file for the implementation of the RAG application
 
 if __name__ == "__main__":
     docs = load_all_documents("data")
