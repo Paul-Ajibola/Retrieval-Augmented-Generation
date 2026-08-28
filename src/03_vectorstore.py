@@ -6,6 +6,8 @@ from typing import List, Any
 from sentence_transformers import SentenceTransformer
 from src.02_embedding import EmbeddingPipeline
 
+
+# the vector database class
 class FaissVectorStore:
     def __init__(self, persist_dir: str="faiss_store", embedding_model: str="all-MiniLM-L6Lv2", chunk_size: int=1000, chunk_overlap: int=200):
         self.persist_dir = persist_dir    
